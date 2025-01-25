@@ -1,0 +1,44 @@
+.techlogo {
+  height: 100px; /* Set consistent logo height */
+  width: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Add spacing around the logos */
+  display: inline-block; /* Align logos inline */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover animations */
+  filter: none; /* No glow by default */
+}
+
+.techlogo:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.5))
+    drop-shadow(0 0 10px rgba(0, 255, 255, 0.6))
+    drop-shadow(0 0 15px rgba(0, 255, 255, 0.7)); /* Subtle glow on hover */
+}
+
+.techlogo-container {
+  display: flex; /* Flexbox for alignment */
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  justify-content: center; /* Center-align the logos */
+  gap: 15px; /* Add spacing between logos */
+  background: #000; /* Dark background to make the neon pop */
+}
+
+.ts {
+  border: 5px solid aqua; /* Ensure border style is defined */
+  border-radius: 10%;
+}
+
+.techstack {
+
+  font-family: "Playwrite IN", serif;
+  color: aliceblue;
+  font-optical-sizing: auto;
+  font-size: 30px;
+  transition: transform 250ms;
+
+  /* font-weight: <weight>;
+    font-style: normal; */
+}
+
+.techstack:hover {
+  transform: translateY(-10px);
+}
