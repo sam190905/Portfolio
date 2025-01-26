@@ -115,3 +115,8 @@
       /* pointer-events: none; Optional: Prevents interaction with the location element */
   }
 
+@media (max-width:768px){
+  .prof{
+    font-size: medium;
+  }
+}
