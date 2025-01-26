@@ -5,30 +5,56 @@
   text-align: center;
 }
 
-.app-container{
+.app-container {
   display: grid;
-  grid-template-columns: 800px  500px;
+  grid-template-columns: 800px 500px;
   grid-template-rows: 100px 400px 1fr 100px;
   gap: 100px;
 }
 
-.header{
-  grid-column: 1/-1;
-  grid-row: 1/2;
+.header {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
 }
 
-.details{
-  grid-column: 1/span 2;
+.details {
+  grid-column: 1 / span 2;
 }
 
-.footerbox{
-  grid-column: 1/span 2;
+.footerbox {
+  grid-column: 1 / span 2;
   width: 100%;
 }
 
-.projects{
+.projects {
   grid-column: 1 / -1;
   background: lightblue; /* Temporary for visual debugging */
 }
-.techstack{
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .app-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+
+  .header,
+  .details,
+  .footerbox,
+  .projects {
+    grid-column: 1 / -1; /* Span the full width */
+  }
+
+  .details {
+    grid-row: auto;
+  }
+
+  .footerbox {
+    padding: 1rem;
+  }
+
+  .projects {
+    padding: 1rem;
+  }
 }
